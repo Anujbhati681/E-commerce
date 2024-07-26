@@ -3,25 +3,30 @@
 .search-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Allows elements to wrap in small screens */
+  gap: 0; /* Removes the gap between the input and button */
+  margin: 0 10px; /* Margin for some spacing on small screens */
 }
 
 .search-bar input {
   flex-grow: 1;
-  padding: 8px;
+  padding: 7px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
+  font-size: 16px; /* Adjust font size for better readability */
 }
 
 .search-bar button {
-  padding: 8px 16px;
+  padding: 8px;
   border: none;
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px; /* Adjust font size for better readability */
 }
 
 .search-bar button:hover {
@@ -31,4 +36,43 @@
 .search-bar button svg {
   width: auto;
   height: 17px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-bar input {
+    font-size: 14px; /* Slightly smaller font size for medium screens */
+  }
+
+  .search-bar button {
+    padding: 8px x; /* Reduce padding for medium screens */
+    font-size: 14px; /* Adjust font size for better fit */
+  }
+
+  .search-bar button svg {
+    height: 14px; /* Adjust SVG size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    flex-direction: column; /* Stack input and button vertically on small screens */
+    gap: 8px; /* Add gap between stacked elements */
+  }
+
+  .search-bar input {
+    border-radius: 4px; /* Full border radius for stacked input */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .search-bar button {
+    width: 100%; /* Full width on small screens */
+    border-radius: 4px; /* Full border radius for stacked button */
+    padding: 10px; /* Increase padding for better touch target */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  .search-bar button svg {
+    height: 16px; /* Adjust SVG size for small screens */
+  }
 }

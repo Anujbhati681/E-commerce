@@ -1,3 +1,5 @@
+/* src/components/ProductList/ProductList.css */
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +15,8 @@
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
-  width: 200px; /* Adjust width as per your design */
+  width: 200px; /* Default width for larger screens */
+  max-width: 100%; /* Ensure items don’t exceed container width */
 }
 
 .product-item:hover {
@@ -21,7 +24,7 @@
 }
 
 .product-item__image {
-  height: 200px; /* Adjust height as per your design */
+  height: 200px; /* Default height for larger screens */
   object-fit: cover;
   width: 100%;
 }
@@ -36,4 +39,41 @@
   color: #777;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-item {
+    width: 150px; /* Smaller width for medium screens */
+  }
+
+  .product-item__image {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .product-item__name {
+    font-size: 16px; /* Smaller font size for names */
+  }
+
+  .product-item__price {
+    font-size: 14px; /* Smaller font size for prices */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .product-item__image {
+    height: 120px; /* Adjust image height for very small screens */
+  }
+
+  .product-item__name {
+    font-size: 14px; /* Smaller font size for names */
+  }
+
+  .product-item__price {
+    font-size: 12px; /* Smaller font size for prices */
+  }
 }

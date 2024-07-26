@@ -7,6 +7,7 @@
   padding: 16px;
   background-color: #333;
   color: white;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar__brand {
@@ -15,20 +16,19 @@
   font-family: cursive;
   font-weight: bolder;
   text-decoration: none;
-  
+  margin-right: auto; /* Pushes the brand to the start */
 }
 
 .navbar__links {
   display: flex;
   gap: 50px;
-  margin-left: 200px;
+  margin-left: 40px; /* Space between brand and links */
 }
 
 .navbar__link {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  
 }
 
 .navbar__link:hover {
@@ -43,4 +43,39 @@
 
 .navbar__cart {
   margin-left: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar__brand {
+    font-size: 20px;
+    margin-bottom: 10px; /* Space below the brand */
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Space between links */
+    margin: 0; /* Remove margin on smaller screens */
+    width: 100%; /* Make links full width */
+    margin-left: 0; /* No margin left on smaller screens */
+  }
+
+  .navbar__link {
+    font-size: 14px; /* Smaller font size for links */
+  }
+
+  .navbar-search {
+    margin: 10px 0; /* Space around search bar */
+    width: 100%; /* Make search bar full width */
+  }
+
+  .navbar__cart {
+    margin: 10px 0; /* Space around cart icon */
+  }
 }
