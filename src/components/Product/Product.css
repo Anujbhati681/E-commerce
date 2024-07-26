@@ -1,0 +1,48 @@
+/* Product.css */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s;
+  height: 400px; /* Set a fixed height for the product card */
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 16px;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 16px 0 8px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.product p {
+  font-size: 16px;
+  color: #777;
+  margin: 8px 0;
+  flex-grow: 1;
+}
+
+.product button {
+  margin-top: 16px;
+  width: 100%;
+  align-self: flex-end; /* Ensure the button is aligned to the bottom */
+}

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Women's Dress",
+      "description": "Elegant summer dress.",
+      "price": 39.99,
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "./9697f6bbf157ff990d133cccf6cccd55.png",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Women's Handbag",
+      "description": "Stylish leather handbag.",
+      "price": 79.99,
+      "image": "./Womens-Handbag-PNG-Image.png",
+      "rating": 4
+    }
+    
+  ]
+  

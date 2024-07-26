@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Children's Toy",
+      "description": "Fun and educational toy.",
+      "price": 15.99,
+      "image": "/football_PNG52750.png"
+    },
+    {
+      "id": 2,
+      "name": "Children's T-Shirt",
+      "description": "Colorful cotton t-shirt.",
+      "price": 14.99,
+      "sizes": ["S", "M"],
+      "image": "./clipart-shirt-kid-shirt-15.png"
+    }
+   
+  ]
+  
