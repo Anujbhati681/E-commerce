@@ -62,11 +62,11 @@
 
   .search-bar input {
     border-radius: 4px; /* Full border radius for stacked input */
-    width: 70%; /* Full width on small screens */
+    width: 60%; /* Full width on small screens */
   }
 
   .search-bar button {
-    width: 40px; /* Full width on small screens */
+    width: 15%; /* Full width on small screens */
     border-radius: 4px; /* Full border radius for stacked button */
     padding: 8px; /* Increase padding for better touch target */
     font-size: 16px; /* Adjust font size for better readability */
