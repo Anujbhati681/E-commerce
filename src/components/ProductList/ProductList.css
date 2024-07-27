@@ -66,7 +66,8 @@
   }
 
   .product-item__image {
-    height: 120px; /* Adjust image height for very small screens */
+    height: 300px;
+     /* Adjust image height for very small screens */
   }
 
   .product-item__name {

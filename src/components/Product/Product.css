@@ -12,7 +12,7 @@
   padding: 16px;
   text-align: center;
   transition: transform 0.2s;
-  height: 400px; /* Set a fixed height for the product card */
+  height: auto; /* Remove fixed height for better responsiveness */
 }
 
 .product:hover {
@@ -20,9 +20,9 @@
 }
 
 .product img {
-  width: 100%; /* Full width to adapt to different screen sizes */
+  width: 100%; /* Ensure image takes full width of its container */
   height: auto; /* Maintain aspect ratio */
-  max-width: 200px; /* Max width to prevent oversized images */
+  max-width: 200px; /* Restrict image size to prevent oversized images */
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 16px;
 }
@@ -41,7 +41,7 @@
 
 .product button {
   margin-top: 16px;
-  width: 100%; /* Ensure the button takes full width */
+  width: 100%; /* Button takes full width */
   padding: 10px; /* Add padding for better touch experience */
   border: none;
   background-color: #007bff;
@@ -59,7 +59,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .product {
-    height: auto; /* Remove fixed height on smaller screens */
+    height: auto; /* Remove fixed height on medium screens */
   }
 
   .product img {
@@ -87,7 +87,7 @@
   }
 
   .product img {
-    max-width: 100px; /* Further adjust image size for small screens */
+    max-width: 60px; /* Further adjust image size for small screens */
   }
 
   .product h2 {

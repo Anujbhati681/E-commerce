@@ -45,7 +45,7 @@
   }
 
   .search-bar button {
-    padding: 8px x; /* Reduce padding for medium screens */
+    padding: 8px; /* Reduce padding for medium screens */
     font-size: 14px; /* Adjust font size for better fit */
   }
 
@@ -56,23 +56,46 @@
 
 @media (max-width: 480px) {
   .search-bar {
-    flex-direction: column; /* Stack input and button vertically on small screens */
+     /* Stack input and button vertically on small screens */
     gap: 8px; /* Add gap between stacked elements */
   }
 
   .search-bar input {
     border-radius: 4px; /* Full border radius for stacked input */
-    width: 100%; /* Full width on small screens */
+    width: 70%; /* Full width on small screens */
   }
 
   .search-bar button {
-    width: 100%; /* Full width on small screens */
+    width: 40px; /* Full width on small screens */
     border-radius: 4px; /* Full border radius for stacked button */
-    padding: 10px; /* Increase padding for better touch target */
+    padding: 8px; /* Increase padding for better touch target */
     font-size: 16px; /* Adjust font size for better readability */
   }
 
   .search-bar button svg {
     height: 16px; /* Adjust SVG size for small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .search-bar {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 8px; /* Add gap between stacked elements */
+    margin: 0 5px; /* Reduce side margin */
+  }
+
+  .search-bar input {
+    padding: 6px; /* Slightly reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .search-bar button {
+    width: 100%; /* Full width */
+    padding: 8px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .search-bar button svg {
+    height: 14px; /* Reduce SVG size */
   }
 }
