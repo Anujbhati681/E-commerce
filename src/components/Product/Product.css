@@ -1,4 +1,4 @@
-/* Product.css */
+/* src/components/Product/Product.css */
 
 .product {
   display: flex;
@@ -20,9 +20,9 @@
 }
 
 .product img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* Full width to adapt to different screen sizes */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Max width to prevent oversized images */
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 16px;
 }
@@ -31,18 +31,75 @@
   font-size: 18px;
   margin: 16px 0 8px;
   color: #333;
-  flex-grow: 1;
 }
 
 .product p {
   font-size: 16px;
   color: #777;
   margin: 8px 0;
-  flex-grow: 1;
 }
 
 .product button {
   margin-top: 16px;
-  width: 100%;
-  align-self: flex-end; /* Ensure the button is aligned to the bottom */
+  width: 100%; /* Ensure the button takes full width */
+  padding: 10px; /* Add padding for better touch experience */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product {
+    height: auto; /* Remove fixed height on smaller screens */
+  }
+
+  .product img {
+    max-width: 150px; /* Adjust image size for medium screens */
+  }
+
+  .product h2 {
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
+
+  .product p {
+    font-size: 14px; /* Adjust font size for medium screens */
+  }
+
+  .product button {
+    font-size: 14px; /* Adjust font size for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    margin: 8px; /* Reduce margin on small screens */
+    padding: 12px; /* Reduce padding on small screens */
+    text-align: left; /* Align text to the left for small screens */
+  }
+
+  .product img {
+    max-width: 100px; /* Further adjust image size for small screens */
+  }
+
+  .product h2 {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .product p {
+    font-size: 12px; /* Adjust font size for small screens */
+  }
+
+  .product button {
+    font-size: 12px; /* Adjust font size for button */
+    padding: 8px; /* Reduce padding for small screens */
+  }
 }

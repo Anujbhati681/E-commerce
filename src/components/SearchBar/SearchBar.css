@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap; /* Allows elements to wrap in small screens */
-  gap: 0; /* Removes the gap between the input and button */
+  gap: 5px; /* Removes the gap between the input and button */
   margin: 0 10px; /* Margin for some spacing on small screens */
 }
 
@@ -12,7 +12,7 @@
   flex-grow: 1;
   padding: 7px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px;
   font-size: 16px; /* Adjust font size for better readability */
 }
 
@@ -22,7 +22,7 @@
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -9,6 +9,7 @@ import Men from './pages/Men/Men';
 import Women from './pages/Women/Women';
 import Children from './pages/Children/Children';
 
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -24,6 +25,8 @@ const App = () => {
           path="/"
           element={<Home searchTerm={searchTerm} />}
         />
+         <Route path="/cart" element={<Cart />} />
+        
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/men" element={<Men searchTerm={searchTerm} />} />

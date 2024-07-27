@@ -13,7 +13,7 @@
       "name": "Watch",
       "image": "./Watch-PNG-Transparent-Image.png",
       "price": "299",
-      "rating": 4
+      "rating": 3
     },
     {
       "id": 3,
@@ -21,14 +21,14 @@
       "image": "./mens-shoes-hd-png--800.png",
     
       "price": "29",
-      "rating": 4
+      "rating": 4.5
     },
     {
       "id": 4,
       "name": "Black Solid Tshirt",
       "image": "./isolated-black-t-shirt-front-free-png.webp",
       "price": "39",
-      "rating": 4,
+      "rating": 5,
       "sizes": ["S", "M", "L", "XL"]
     },
     {
@@ -36,7 +36,7 @@
       "name": "Football",
       "image": "./football_PNG52750.png",
       "price": "9",
-      "rating": 4
+      "rating": 4.2
     },
     {
       "id": 6,
@@ -44,7 +44,7 @@
       "description": "Colorful cotton t-shirt.",
       "price": 14.99,
       "image": "./clipart-shirt-kid-shirt-15.png",
-      "rating": 4
+      "rating": 4.1
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "description": "Stylish leather handbag.",
       "price": 79.99,
       "image": "./Womens-Handbag-PNG-Image.png",
-      "rating": 4
+      "rating": 4.6
     }
   ]
   

@@ -1,18 +1,25 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext.jsx';
 import CartItem from './CartItem.jsx';
 import './Cart.css';
 
 const Cart = () => {
   const { cartItems } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   const handleCheckout = () => {
-    alert(`Proceeding to checkout with total amount: $${calculateTotal()}`);
-    // Implement actual checkout logic here
+    const totalAmount = calculateTotal();
+    if (totalAmount > 0) {
+      // Redirect to the checkout page with the total amount
+      navigate(`/checkout?amount=${totalAmount}`);
+    } else {
+      alert('Your cart is empty.');
+    }
   };
 
   return (
